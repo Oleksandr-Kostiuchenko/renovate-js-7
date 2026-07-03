@@ -353,4 +353,148 @@ h2 {
 /* ------------------------------------- /TASK 4 ------------------------------------- */
 
 /* ------------------------------------- TASK 5 ------------------------------------- */
-/* ------------------------------------- TASK 5 ------------------------------------- */
+
+.widget-body {
+  display: flex;
+}
+
+.widget {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.color {
+}
+
+.change-color,
+.reset-color {
+  width: 148px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 10px;
+
+  transition: all 250ms linear;
+}
+
+.reset-color {
+  background-color: #ff4e4e;
+}
+
+.change-color:hover,
+.reset-color:hover {
+  transform: scale(1.05);
+}
+/* ------------------------------------- /TASK 5 ------------------------------------- */
+
+/* ------------------------------------- TASK 6 ------------------------------------- */
+.widget-create {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.number-input {
+  width: 200px;
+  height: 48px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #d0d0d0;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #2e2f42;
+  transition: all 250ms linear;
+}
+
+.number-input:focus {
+  border-color: #4e75ff;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.1);
+}
+
+.create-btn,
+.destroy-btn {
+  height: 48px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.create-btn {
+  background-color: #4e75ff;
+  min-width: 148px;
+}
+
+.create-btn:hover {
+  background-color: #3d63e6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(78, 117, 255, 0.3);
+}
+
+.create-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(78, 117, 255, 0.2);
+}
+
+.destroy-btn {
+  background-color: #ff4e4e;
+  min-width: 148px;
+}
+
+.destroy-btn:hover {
+  background-color: #e63a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 78, 78, 0.3);
+}
+
+.destroy-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(255, 78, 78, 0.2);
+}
+
+.create-space-div {
+  width: 100%;
+  display: flex;
+  gap: 3px;
+}
+
+.square-element {
+  flex-shrink: 0;
+}
+
+/* ------------------------------------- /TASK 6 ------------------------------------- */
