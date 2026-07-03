@@ -1,0 +1,356 @@
+/* ------------------------------------- GENERAL STYLES ------------------------------------- */
+body {
+  font-family: "Montserrat";
+  color: #434455;
+  background-color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body.no-scroll,
+html.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+svg {
+  fill: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input {
+  font-family: inherit;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07143;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.11111;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+}
+
+/* --------- Adaptive container styles --------- */
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1158px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+} */
+/* ------------------------------------- /GENERAL STYLES ------------------------------------- */
+
+/* ------------------------------------- TASK 1 ------------------------------------- */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  width: 392px;
+  padding: 16px;
+
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  border: #5c5c5e 1px solid;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  transition: all 250ms linear;
+}
+
+.list-item:hover {
+  background-color: #75769c;
+  color: #f6f6fe;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+/* ------------------------------------- /TASK 1 ------------------------------------- */
+
+/* ------------------------------------- TASK 2 ------------------------------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  border-radius: 7px;
+  overflow: hidden;
+
+  transition: all 250ms linear;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 13px 50px -12px #000000;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ------------------------------------- /TASK 2 ------------------------------------- */
+
+/* ------------------------------------- TASK 3 ------------------------------------- */
+
+#name-input {
+  width: 360px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  margin-bottom: 16px;
+}
+
+.title-greet {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.greet-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ------------------------------------- /TASK 3 ------------------------------------- */
+
+/* ------------------------------------- TASK 4 ------------------------------------- */
+.login-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.input-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-label input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: #808080 1px solid;
+
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.login-form button {
+  width: 86px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  background: linear-gradient(135deg, #4e75ff 0%, #6f8cff 100%);
+  box-shadow: 0 8px 20px rgba(78, 117, 255, 0.25);
+  cursor: pointer;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    background 250ms ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(78, 117, 255, 0.35);
+  background: linear-gradient(135deg, #5d87ff 0%, #8092ff 100%);
+}
+
+.login-form button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 6px 14px rgba(78, 117, 255, 0.25);
+}
+/* ------------------------------------- /TASK 4 ------------------------------------- */
+
+/* ------------------------------------- TASK 5 ------------------------------------- */
+/* ------------------------------------- TASK 5 ------------------------------------- */
